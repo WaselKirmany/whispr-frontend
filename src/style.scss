@@ -1,0 +1,350 @@
+.theme-light{
+    transition: all .2s ease-in-out;
+    .navbar{
+        background-color: rgba(255, 255, 255);
+        border-bottom: 1px solid lightgrey;
+        .left{
+            span{
+                color:rgb(255, 85, 113);
+            }
+            svg{
+                color:rgb(0, 0, 0);
+            }
+            .search{
+                border: 1px solid lightgray;
+            }
+            input{
+                background-color: white;
+            }
+        }
+        .right{
+            svg{
+                color: black;
+            }
+            span{
+                color: black;
+            }
+        }
+    }
+    .leftbar{
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        background-color: rgb(255, 255, 255);
+        .container{
+            .menu{
+                span{
+                    color:rgb(2, 2, 2);
+                }
+                svg{
+                    color:black;
+                }
+                .createButton{
+                    button{
+                        background-color: rgb(0, 0, 0);
+                        svg{
+                            color:white;
+                            transition: all .5s ease-in-out 0s;
+                        }
+                        &:hover{
+                            color: #000000;
+                            background-color: rgb(255, 85, 113);
+                            svg{
+                                color:#000000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .rightbar{
+        box-shadow:0 4px 15px rgba(32, 32, 32, 0.1);
+        .container{
+            .item{
+                span{
+                    color: rgb(0, 0, 0);
+                }
+                .user{
+                    .userInfo{
+                        span{
+                            color: #000000;
+                        }
+                    }
+                    .userPost{
+                        p{
+                            color:rgba(0, 0, 0, 0.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .post{
+        background-color: #f5f5f5;
+        // box-shadow:0 4px 15px rgba(32, 32, 32, 0.815);
+        .container{
+            background-color: #f5f5f5;
+            .user{
+                .userInfo{
+                    // background-color: #ffffff;
+                    img{
+
+                    }
+                    span{
+
+                    }
+                }
+            }
+            .content{
+                span{
+
+                }
+                p{
+
+                }
+            }
+            .info{
+                .likes .comments .share{
+                    background: #bebebe63;
+                }
+                svg{
+                    color: #000000;
+                }
+            }
+            &:hover{
+                background-color: #ededed;
+            }
+        }
+        hr{
+            
+        }
+
+    }
+    .profile{
+        background-color: #f5f5f5;
+        .details{
+            span, p{
+                color: #000000;
+            }
+        }
+        button{
+            background-color: #000000;
+            color: white;
+            &:hover{
+                background-color: rgb(255, 85, 113);
+            }
+        }
+    }
+    .comment{
+        .comments{
+            height: 100vh;
+        }
+    }
+}
+.theme-dark{
+    transition: all .2s ease-in-out;
+    .navbar{
+        background-color: rgb(0, 0, 0);
+        border-bottom: 1px solid whitesmoke;
+        .left{
+            span{
+                color:rgb(255, 85, 113);
+            }
+            svg{
+                color:rgb(255, 255, 255);
+            }
+            .search{
+                border: 1px solid lightgray;
+            }
+            input{
+                background-color: rgb(0, 0, 0);
+                color: white;
+            }
+        }
+        .right{
+            svg{
+                color: rgb(255, 255, 255);
+            }
+            span{
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+    
+    .leftbar{
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        background-color: rgb(0, 0, 0);
+        .container{
+            .menu{
+                span{
+                    color:rgb(255, 255, 255);
+                }
+                svg{
+                    color:rgb(255, 255, 255);
+                }
+                .createButton{
+                    button{
+                        background-color: rgb(255, 255, 255);
+                        color:black;
+                        svg{
+                            color:rgb(0, 0, 0);
+                            transition: all .5s ease-in-out 0s;
+                        }
+                        &:hover{
+                            color: #ffffff;
+                            background-color: rgb(255, 85, 113);
+                            svg{
+                                color:#ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .rightbar{
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        .container{
+            background-color: #000000;
+            .item{
+                span{
+                    color: rgb(255, 255, 255);
+                }
+                .user{
+                    .userInfo{
+                        span{
+                            color: #ffffff;
+                        }
+                    }
+                    .userPost{
+                        p{
+                            color:rgba(255, 255, 255, 0.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .post{
+        background-color: #141414;
+        // box-shadow:0 4px 15px rgba(32, 32, 32, 0.815);
+        .container{
+            background-color: #141414;
+            .user{
+                .userInfo{
+                    // background-color: #ffffff;
+                    img{
+
+                    }
+                    span{
+                        color: #ffffff;
+                    }
+                }
+            }
+            .content{
+                span{
+                    color: #ffffff;
+                }
+                p{
+                    color: #ffffff;
+                }
+            }
+            .info{
+                color: white;
+                .likes{
+                    color: #ffffff;
+                    background-color: #2e2e2eb9;
+                }
+                .comments{
+                    color: #ffffff;
+                    background-color: #2e2e2eb9;
+                    &:hover{
+                        color: rgb(255, 85, 113);
+                    }
+                }
+                .share{
+                    color: #ffffff;
+                    background-color: #2e2e2eb9;
+                    &:hover{
+                        color: rgb(255, 85, 113);
+                    }
+                }
+                svg{
+                    color: #ffffff;
+                }
+            }
+            &:hover{
+                background-color: #0c0c0c;
+            }
+        }
+        hr{
+            
+        }
+
+    }
+    .profile{
+        background-color: #141414;
+        .details{
+            h2,span{
+                color: #ffffff;
+                font-family: poppins, sans-serif;
+            }
+        }
+        
+        button{
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            &:hover{
+                background-color: rgb(255, 85, 113);
+            }
+        }
+    }
+    .comment{
+        background-color: #141414;
+        .container{
+            background-color: #141414;
+            color: #ffffff;
+            &:hover{
+                background: #0c0c0c;
+            }
+        }
+
+        .comments{
+            height: 100vh;
+            .comment{
+                color: #ffffff;
+                .userInfo{
+                    color: #ffffff;
+                    
+                }
+            }
+        }
+    }
+    .create{
+        background-color: #141414;
+        color:#fff;
+        .form{
+            .title{
+                input{
+                    background: #000;
+                    color:white;
+                }
+            }
+            .body{
+                textarea{
+                    background: #000;
+                    color:white;
+                }
+            }
+            .buttons{
+                button{
+                color:#000000;
+                background: #ffffff;
+            }
+            }
+        }
+        
+    }
+}

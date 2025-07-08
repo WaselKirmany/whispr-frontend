@@ -1,0 +1,59 @@
+.rightbar{
+    flex:2.6;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    
+    overflow: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .container{
+        height: 90vh;
+        padding: 20px;
+        .item{
+            padding: 5px;
+            
+            margin-bottom: 20px;
+            span{
+                color:rgb(0, 0, 0);
+                font-family: poppins;
+                font-size: 20px;
+            }
+            .user{
+                .userInfo{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    position: relative;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    span{
+                        // font-weight: 500;
+                        color:black;
+                        font-size: 15px;
+                    }
+                }
+                .userPost{
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content:center;
+                    
+                    
+                    p{
+                        padding: 10px 20px 10px 0 px;
+                        color:rgba(0, 0, 0, 0.8);
+                        font-family:sans-serif;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+        }
+    }
+}

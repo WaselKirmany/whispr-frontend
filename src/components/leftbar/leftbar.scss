@@ -1,0 +1,82 @@
+.leftbar{
+    flex:2;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    // background-color: aqua;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
+    .container{
+        padding: 20px;
+        .menu{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            span{
+                font-size: 14px;
+            }
+
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding-bottom:10px ;
+                img{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                span{
+                    font-size: 17px;
+                    font-family: poppins;
+                }
+            }
+
+            .createButton{
+                // margin-bottom: 0px;
+                button{
+                    display: flex;
+                    align-items: center;
+                    gap:10px;
+                    padding: 7px 20px 7px 10px;
+                    border:none;
+                    border-radius: 50px;
+                    font-size: 15px;
+                    background-color: black;
+                    color: white;
+                    font-family: poppins;
+                    transition: all .5s ease-in-out 0s;
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+            .item{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                svg{
+                    width: 30px;
+                    height: 30px;
+                }
+                span{
+                    font-size: 16px;
+                    font-family: poppins;
+                    color:rgba(0, 0, 0, 0.87)
+                }
+
+            }
+        }
+    }
